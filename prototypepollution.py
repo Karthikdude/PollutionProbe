@@ -61,6 +61,7 @@ def check_live_subdomain(subdomain):
 # Function to test payloads on a subdomain
 def test_payloads(subdomain, payloads):
     vulnerable_urls = []
+    print(Fore.GREEN + f"[+] Testing payloads on {subdomain}...")
     for payload in payloads:
         try:
             url = f"http://{subdomain}{payload['payload']}"
@@ -79,12 +80,14 @@ def main():
     domain = input("Enter the domain to scan for subdomains: ").strip()
     subdomains = get_subdomains(domain)
     live_subdomains = [sub for sub in subdomains if check_live_subdomain(sub)]
-    print(Fore.GREEN + f"[+] Live subdomains for {domain}: {live_subdomains}")
+    print(Fore.GREEN + f"[+] Live subdomains for {domain}:")
+    for subdomain in live_subdomains:
+        print(Fore.GREEN + f"  - {subdomain}")
 
     # Store vulnerable URLs
     all_vulnerable_urls = []
     for subdomain in live_subdomains:
-        print(Fore.GREEN + f"[+] Testing payloads on {subdomain}")
+        print(Fore.GREEN + f"[+] Testing {subdomain} for vulnerabilities...")
         vulnerable_urls = test_payloads(subdomain, proto_payloads)
         all_vulnerable_urls.extend(vulnerable_urls)
 
