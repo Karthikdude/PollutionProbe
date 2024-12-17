@@ -156,6 +156,6 @@ This payload highlights the vulnerability in JavaScript objects when input is no
 - **Timeouts and Headers**: Adjust HTTP request timeouts and headers in the script if needed for specific use cases or more accurate tests.
 - **Subdomain Discovery**: The tool uses `subfinder`, but you can replace it with other tools or methods if desired.
 
-## License
+## Contact ME
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Visit my Website to know me more [Karthik S Sathyan](https://karthik-s-sathyan.vercel.app).
