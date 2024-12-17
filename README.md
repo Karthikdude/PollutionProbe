@@ -34,7 +34,7 @@ Follow the installation instructions provided in the [subfinder documentation](h
 1. **Run the Script**: Execute the script using the following command in your terminal:
 
 ```bash
-python prototype_pollution_scanner.py
+python prototypepollution.py
 ```
 
 2. **Input Domain**: The script will prompt you to enter the domain name for which you want to discover subdomains.
