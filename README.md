@@ -1,17 +1,14 @@
-
-# Subdomain Vulnerability Scanner
+# Prototype Pollution Scanner
 
 ## Overview
 
-The **Subdomain Vulnerability Scanner** is a sophisticated tool designed to automate the process of discovering subdomains for a given domain, verifying their availability, and testing them for vulnerabilities using a set of predefined payloads. The tool primarily focuses on detecting **Prototype Pollution** vulnerabilities, which are common attack vectors in modern JavaScript-based applications.
-
-This tool is invaluable for security researchers, penetration testers, and ethical hackers, enabling them to quickly scan subdomains and evaluate them for specific security issues, particularly Prototype Pollution.
+The **Prototype Pollution Scanner** is a specialized tool designed to automate the process of discovering subdomains for a given domain, verifying their availability, and testing them for **Prototype Pollution** vulnerabilities using a set of predefined payloads. This tool is essential for security researchers, penetration testers, and ethical hackers, enabling them to quickly scan subdomains and evaluate them for this specific security issue.
 
 ## Features
 
 - **Subdomain Discovery**: Utilizes the `subfinder` tool to discover subdomains of a given domain.
 - **Live Subdomain Check**: Verifies the existence of discovered subdomains by sending HTTP requests and checking their responses.
-- **Vulnerability Testing**: Tests each live subdomain for potential vulnerabilities like **Prototype Pollution** and other common security issues using a variety of crafted payloads.
+- **Vulnerability Testing**: Tests each live subdomain for **Prototype Pollution** vulnerabilities using a variety of crafted payloads.
 - **Result Saving**: Allows users to save the list of vulnerable URLs to a specified file for further analysis or reporting.
 
 ## Prerequisites
@@ -37,7 +34,7 @@ Follow the installation instructions provided in the [subfinder documentation](h
 1. **Run the Script**: Execute the script using the following command in your terminal:
 
 ```bash
-python subdomain_scanner.py
+python prototype_pollution_scanner.py
 ```
 
 2. **Input Domain**: The script will prompt you to enter the domain name for which you want to discover subdomains.
@@ -46,7 +43,7 @@ python subdomain_scanner.py
 
 4. **Live Subdomain Check**: The script will then check each discovered subdomain to determine if it's live by sending HTTP requests and evaluating the response.
 
-5. **Vulnerability Testing**: Each live subdomain will be tested for various vulnerabilities using a set of predefined payloads, including payloads for **Prototype Pollution**.
+5. **Vulnerability Testing**: Each live subdomain will be tested for **Prototype Pollution** vulnerabilities using a set of predefined payloads.
 
 6. **Save Results**: After testing, if any vulnerable URLs are found, the script will prompt the user to save the results to a file. You can specify the file path where you want to store the vulnerable URLs.
 
@@ -156,6 +153,6 @@ This payload highlights the vulnerability in JavaScript objects when input is no
 - **Timeouts and Headers**: Adjust HTTP request timeouts and headers in the script if needed for specific use cases or more accurate tests.
 - **Subdomain Discovery**: The tool uses `subfinder`, but you can replace it with other tools or methods if desired.
 
-## Contact ME
+## Contact Me
 
 Visit my Website to know me more [Karthik S Sathyan](https://karthik-s-sathyan.vercel.app).
