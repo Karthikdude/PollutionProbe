@@ -108,6 +108,13 @@ After testing, the script displays the results with color-coded outputs:
 
 If vulnerabilities are found, the user will be prompted to save the results. If the user agrees, they are asked to specify the file path where the vulnerable URLs will be saved. The results are saved in a simple text format, and the file is named `vulnerable_urls.txt` by default.
 
+---
+
+## Working of the Tool
+The flowchart below illustrates the working of the Prototype Polution tool, providing a clear overview of its operational flow:
+
+![Working of XSS-Scanner](images/prototype.png)
+
 ## Example Output
 
 ```plaintext
